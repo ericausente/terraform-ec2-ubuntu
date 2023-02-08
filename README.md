@@ -1,11 +1,20 @@
 # terrform-ec2-ubuntu
 
-## In AWS Console, Setup Programmatic Access
-Add new user and key in the UserName  
- 
-## Attach Existing Policies and Select Admin
-## Completion and Download of API Keys
+## In AWS Console...
+1. Setup Programmatic Access
+2. Add new user and key in the UserName  
+3. Attach Existing Policies and Select Admin
+4. Completion and Download of API Keys
+5. Create a key-value pair, download it, and take note of the name. 
+6. Take note of the VPC ID, write it somewhere. 
+7. Take note of the Subnet ID, write it somewhere. 
+8. Take note of the AMI IDs (you can find this during the 1st step in creating an EC2 Instance - this usually can be found on Step 1) 
 
+Note: 
+Due to some update on the version of Terraform, the "type" directive no longer needs the value of "map" to have quotation. 
+Security Group and Instance Name will be automatically created based on what you have input in your terraform file. 
+Only ports 22 and 80 will be opened in the Security Group Setting.
+The instance name will be named SERVER01. 
 
 As you have downloaded the API Access and Secret keys. You need to save it right so that you can use it in terraform.
 Though terraform accepts the Access Key and Secret Key hardcoded with in the configuration file. It is not recommended.
