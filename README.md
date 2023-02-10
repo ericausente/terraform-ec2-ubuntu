@@ -1,4 +1,4 @@
-# terrform-ec2-ubuntu
+# terraform-ec2-ubuntu
 
 ## In AWS Console...
 1. Setup Programmatic Access
